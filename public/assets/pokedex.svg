@@ -1,0 +1,18 @@
+<svg width="26" height="51" viewBox="0 0 26 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="51" rx="1" fill="#D60000"/>
+<path d="M0 9.64024H9L12 8.60366L13 8.08537L14 7.56707L16 6.53049H26" stroke="#010712" stroke-width="0.5"/>
+<rect x="25" y="5.59756" width="1" height="1.2439" fill="#D60000"/>
+<ellipse cx="3.5" cy="4.35365" rx="2.5" ry="3.10976" fill="#69C4EF"/>
+<ellipse cx="3.49999" cy="4.35365" rx="1.78571" ry="2.22125" fill="#0E99DA"/>
+<ellipse cx="12.5" cy="3.10976" rx="0.5" ry="0.621951" fill="#FF530D"/>
+<ellipse cx="13.5" cy="3.10976" rx="0.5" ry="0.621951" fill="#FFC801"/>
+<ellipse cx="14.5" cy="3.10976" rx="0.5" ry="0.621951" fill="#93C700"/>
+<rect y="27.3659" width="1" height="1.2439" fill="#FFC801"/>
+<rect x="1" y="27.3659" width="1" height="1.2439" fill="#FFC801"/>
+<rect y="26.1219" width="1" height="1.2439" fill="#C4C4C4"/>
+<rect y="28.6098" width="1" height="1.2439" fill="#FFC801"/>
+<rect y="26.1219" width="1" height="1.2439" fill="#FFC801"/>
+<rect x="6.1" y="44.8805" width="15.8" height="2.2878" rx="1.1439" fill="#D60000" stroke="#010712" stroke-width="0.2"/>
+<rect x="24.1" y="50.9" width="44.5805" height="1.8" rx="0.9" transform="rotate(-90 24.1 50.9)" fill="#D60000" stroke="#010712" stroke-width="0.2"/>
+<rect x="24.1" y="47.1683" width="38.361" height="1.8" transform="rotate(-90 24.1 47.1683)" fill="#D60000" stroke="#010712" stroke-width="0.2"/>
+</svg>

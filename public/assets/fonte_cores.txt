@@ -1,0 +1,11 @@
+--red:#D60000;
+--orange:#FF530D;
+--yellow:#FFC801;
+--blue:#0E99DA;
+--green:#93C700;
+--gray:#BFBDBD;
+--black:#010712;
+--white:#F2F2F2;
+
+fonte primaria: Press Start 2P
+fonte secundaria: Poppins

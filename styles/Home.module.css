@@ -1,0 +1,115 @@
+.container_primary {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  background: url(/assets/pikachu.svg), url(/assets/background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40rem, cover;
+  background-position: 80% 140%, center;
+}
+.header {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button_bar {
+  width: 3rem;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  color: var(--white);
+  outline: none;
+}
+.navbar {
+  width: auto;
+  height: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+.input_search {
+  width: 30rem;
+  border-radius: 2rem;
+  background: #0e99da7a;
+  border: 1px solid var(--blue);
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-family: var(--font-secundary);
+}
+
+.input_search::placeholder {
+  color: var(--white);
+}
+
+.input_search:focus {
+  outline: 2px solid var(--white);
+}
+
+.button_search {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group_title {
+  width: 30rem;
+  min-height: 26rem;
+  margin-top: 7rem;
+  background: #0e99da7a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--blue);
+}
+
+.group_title h1 {
+  font-family: var(--font-secundary);
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.group_title h1::first-letter {
+  color: var(--red);
+  font-size: 4rem;
+}
+
+.group_title p {
+  font-family: var(--font-primary);
+  color: var(--white);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.group_title button {
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--red);
+  border-radius: 2rem;
+  color: var(--white);
+  border: 1px solid var(--red);
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  margin-top: 3rem;
+}
