@@ -32,8 +32,7 @@
   border: 1px solid var(--blue);
   padding: 1rem 1.5rem;
   color: var(--white);
-  font-size: 0.8rem;
-  font-family: var(--font-secundary);
+  font-size: 1.1rem;
 }
 
 .input_search::placeholder {
@@ -60,7 +59,7 @@
   width: 30rem;
   min-height: 26rem;
   margin-top: 7rem;
-  background: #0e99da7a;
+  background: var(--blue-light);
 
   display: flex;
   flex-direction: column;
@@ -106,4 +105,96 @@
   font-weight: 500;
   font-family: var(--font-primary);
   margin-top: 3rem;
+}
+
+.content_card_pokemons {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.content_card_pokemons a {
+  border: 1px solid var(--gray);
+  border-radius: 0.2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_card_pokemons a:hover {
+  background: var(--red);
+  border: none;
+  transition: 0.3s;
+}
+
+.content_card_pokemons a:focus {
+  background: var(--red);
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+
+.content_card_pokemons a p {
+  font-weight: 500;
+  color: var(--red);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.content_card_pokemons a:hover p,
+.content_card_pokemons a:focus p {
+  color: var(--white);
+}
+
+.content_card_pokemons a img {
+  max-width: 100%;
+}
+
+.footer {
+  width: 100%;
+  min-height: 5rem;
+  background: url(/assets/background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group_social_media {
+  min-width: 30%;
+  height: 100%;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.group_social_media a {
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--blue-light);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group_social_media a:hover {
+  background-color: var(--blue);
+  transition: 0.3s ease;
+}
+
+.footer p {
+  color: var(--white);
+  font-size: 1.1rem;
 }

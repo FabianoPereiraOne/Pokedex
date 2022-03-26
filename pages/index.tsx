@@ -42,7 +42,7 @@ const Home = ({ pokemons }: homeProps) => {
               maxLength={40}
               className={styles.input_search}
               name="name"
-              placeholder="Explore o mundo dos pokemons..."
+              placeholder="Explore o incrivel mundo dos pokemons..."
             />
             <button
               className={styles.button_search}
@@ -80,7 +80,10 @@ const Home = ({ pokemons }: homeProps) => {
           pokemons.map((pokemon: Pokemon, index: number) => {
             return (
               <Link href={`/pokemon/${pokemon.slugRef}`} key={index.toString()}>
-                <a tabIndex={3 + index} data-message="">
+                <a
+                  tabIndex={3 + index}
+                  aria-label={`Click this link to access more pokemon information ${pokemon.name}.`}
+                >
                   <p>{pokemon.name}</p>
                   <img src={pokemon.image} />
                 </a>
@@ -88,19 +91,30 @@ const Home = ({ pokemons }: homeProps) => {
             )
           })}
       </main>
-      <footer>
-        <a href="" aria->
-          <FiGlobe />
-        </a>
-        <a href="">
-          <FiInstagram />
-        </a>
-        <a href="">
-          <FiGithub />
-        </a>
-        <a href="">
-          <FiLinkedin />
-        </a>
+      <footer className={styles.footer}>
+        <div className={styles.group_social_media}>
+          <a
+            href="https://portifolio-fabianopereiraone.vercel.app/"
+            target="_blank"
+          >
+            <FiGlobe />
+          </a>
+          <a
+            href="https://www.instagram.com/fabiano_pereira.s/"
+            target="_blank"
+          >
+            <FiInstagram />
+          </a>
+          <a href="https://github.com/FabianoPereiraOne" target="_blank">
+            <FiGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fabiano-pereireira-one/"
+            target="_blank"
+          >
+            <FiLinkedin />
+          </a>
+        </div>
         <p>Copyright &copy; | Desenvolvido por Fabiano Pereira</p>
       </footer>
     </div>
