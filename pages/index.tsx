@@ -31,6 +31,7 @@ const Home = ({ pokemons }: homeProps) => {
           content="Blibioteca de informações sobre os pokemons"
         />
         <link rel="icon" href="/assets/pikachu.svg" />
+        <html lang="pt-BR" />
       </Head>
       <section className={styles.container_primary}>
         <header className={styles.header}>
