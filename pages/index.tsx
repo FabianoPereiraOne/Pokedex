@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {
   FiSearch,
@@ -85,7 +86,10 @@ const Home = ({ pokemons }: homeProps) => {
                   aria-label={`Click this link to access more pokemon information ${pokemon.name}.`}
                 >
                   <p>{pokemon.name}</p>
-                  <img src={pokemon.image} />
+                  <Image
+                    src={pokemon.image}
+                    alt={`Imagem do pokemon ${pokemon.name}`}
+                  />
                 </a>
               </Link>
             )
@@ -96,21 +100,28 @@ const Home = ({ pokemons }: homeProps) => {
           <a
             href="https://portifolio-fabianopereiraone.vercel.app/"
             target="_blank"
+            rel="noreferrer"
           >
             <FiGlobe />
           </a>
           <a
             href="https://www.instagram.com/fabiano_pereira.s/"
             target="_blank"
+            rel="noreferrer"
           >
             <FiInstagram />
           </a>
-          <a href="https://github.com/FabianoPereiraOne" target="_blank">
+          <a
+            href="https://github.com/FabianoPereiraOne"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/fabiano-pereireira-one/"
             target="_blank"
+            rel="noreferrer"
           >
             <FiLinkedin />
           </a>
