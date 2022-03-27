@@ -151,10 +151,6 @@
   color: var(--white);
 }
 
-.content_card_pokemons a img {
-  max-width: 100%;
-}
-
 .footer {
   width: 100%;
   min-height: 5rem;
