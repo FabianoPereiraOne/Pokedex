@@ -1,6 +1,5 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {
   FiSearch,
@@ -86,7 +85,7 @@ const Home = ({ pokemons }: homeProps) => {
                   aria-label={`Click this link to access more pokemon information ${pokemon.name}.`}
                 >
                   <p>{pokemon.name}</p>
-                  <Image
+                  <img
                     src={pokemon.image}
                     alt={`Imagem do pokemon ${pokemon.name}`}
                   />
