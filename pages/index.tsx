@@ -59,13 +59,15 @@ const Home = ({ pokemons }: homeProps) => {
         <article className={styles.group_title}>
           <h1>Pokédex</h1>
           <p>
-            lorem ipsum dolor silorem ipsum dolor sitlorem ipsum dolor sitlorem
-            ipsum dolord sitlorem ipsum dolor sitlorem ipsum dolor sitlorem
-            ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum
-            dolor sitlorem ipsum dolor silorem ipsum dolor sitlorem ipsum dolor
-            sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor
-            sitlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor
-            sitlorem ipsum dolor sitlorem ipsum dolor sittt
+            A Origem do Universo Pokémon. No início do universo existiu um ovo,
+            e deste ovo nasceu Arceus, o Pokémon Alpha. Por viver em solidão,
+            ele decidiu criar mais 3 pokémon: Dialga, para controlar o tempo,
+            Palkia para controlar o espaço e Giratina para levar a alma dos
+            Pokémon mortos para o Mundo Inferior, ou a antimatéria. Após a
+            criação do universo, Arceus criou mais três pokémons para a criação
+            do ser humano: Azelf, Uxie e Mesprit, todos criados do mesmo ovo.
+            Azelf deu a eles a força, Uxie deu a sabedoria, e Mesprit deu os
+            sentimentos.
           </p>
           <button
             tabIndex={3}
@@ -81,7 +83,7 @@ const Home = ({ pokemons }: homeProps) => {
         {pokemons &&
           pokemons.map((pokemon: Pokemon, index: number) => {
             return (
-              <Link href={`/pokemon/${pokemon.slugRef}`} key={index.toString()}>
+              <Link href="/#/" key={index.toString()}>
                 <a
                   tabIndex={3 + index}
                   aria-label={`Click this link to access more pokemon information ${pokemon.name}.`}

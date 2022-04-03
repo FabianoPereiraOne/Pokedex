@@ -195,11 +195,29 @@
   font-size: 1.1rem;
 }
 
-@media screen and (min-width: 301px) and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .content_card_pokemons{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem 2rem;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .container_primary {
     background-size: 35rem, cover;
     background-position: 80% 130%, center;
     padding: 1rem 2rem;
+  }
+
+  .content_card_pokemons{
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
   }
 
   .group_title {
@@ -209,6 +227,16 @@
 
   .navbar input {
     display: none;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer p{
+    text-align: center;
   }
 }
 
